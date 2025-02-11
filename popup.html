@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRM Map Overlay</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 200px; }
+        button { padding: 8px; margin-top: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <h3>CRM Map Overlay</h3>
+    <button id="reload">Reload Overlay</button>
+    <script>
+        document.getElementById("reload").addEventListener("click", () => {
+            chrome.tabs.reload();
+        });
+    </script>
+</body>
+</html>
